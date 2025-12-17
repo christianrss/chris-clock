@@ -9,7 +9,7 @@ class WindowClass
 {
 private:
     static constexpr auto PI = std::numbers::pi_v<float>;
-    static constexpr auto circleRadius = 250.0F;
+    static constexpr auto circleRadius = 100.0F;
     static constexpr auto offset = PI / 2.0F;
     static constexpr auto innerRadius = 5.0F;
     static constexpr auto hrsClockHandLength = 0.95F;
@@ -17,8 +17,6 @@ private:
     static constexpr auto secsClockHandLength = 0.75F;
     static constexpr auto hrsStrokesLength = 0.90F;
     static constexpr auto minsStrokesLength = 0.95F;
-
-    static constexpr auto circleRadius = 250.0F;
 
 public:
     WindowClass() : secs(0), mins(0), hrs(0), center({}){};
