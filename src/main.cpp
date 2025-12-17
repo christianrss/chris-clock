@@ -29,4 +29,12 @@ static void glfw_error_callback(int error, const char *description);
 void start_cycle()
 {
     glfwPollEvents();
+    ImGui_ImplOpenGL3_NewFrame();
+    ImGui_ImplGlfw_NewFrame();
+}
+
+void end_cycle(GLFWwindow *const window)
+{
+    const auto clear_color =
+        ImVec4(30)
 }
